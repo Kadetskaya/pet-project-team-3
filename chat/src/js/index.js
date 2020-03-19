@@ -8,6 +8,12 @@ let userName = '';
 
 let socket = new WebSocket('wss://zi-node-chat.herokuapp.com');
 
+function newMessage(dat, message, author, color) {
+    display.innerHTML += '<p class="row"><span style="color:' + color + ' ">' + author + '</span> @ '
+        + (dat.getHours() < 10 ? '0' + dat.getHours() : dat.getHours()) + ':' + (dat.getMinutes() < 10 ? '0'
+            + dat.getMinutes() : dat.getMinutes()) + ' : ' + message + '</p>';
+};
+
 socket.onopen = function () {
     person.innerText = 'Choose nickname:';
 };
@@ -55,8 +61,3 @@ input.addEventListener('keydown', function (e) {
 });
 
 
-function newMessage(dat, message, author, color) {
-    display.innerHTML += '<p class="row"><span style="color:' + color + ' ">' + author + '</span> @ '
-        + (dat.getHours() < 10 ? '0' + dat.getHours() : dat.getHours()) + ':' + (dat.getMinutes() < 10 ? '0'
-            + dat.getMinutes() : dat.getMinutes()) + ' : ' + message + '</p>';
-};

@@ -1,5 +1,4 @@
-"use strict"
-
+"use strict";
 
 const c = document.getElementById("ball");
 const ctx = c.getContext('2d');
@@ -54,6 +53,18 @@ function Draw(x, y) { // create new object
 }
 
 Draw.prototype.collisionWall = function () {
+    if (this.x < this.r) {
+        this.x = this.r;
+    }
+    if (this.r > c.width - this.x) {
+        this.x = c.width - this.r;
+    }
+    if (this.y < this.r) {
+        this.y = this.r;
+    }
+    if (this.r > c.height - this.y) {
+        this.y = c.height - this.r;
+    }
     if (this.y + this.r >= c.height) {
         this.Oy *= -1;
     }
@@ -116,21 +127,19 @@ Draw.prototype.collision = function () {
             }
         }
     }
-}
+};
 
 // move element
 Draw.prototype.move = function () {
-
     ctx.fillStyle = this.color;
     this.collisionWall();
     ctx.beginPath();
     ctx.arc(this.x += this.Ox, this.y += this.Oy, this.r, 0, 2 * Math.PI);
     ctx.fill();
-
-}
+};
 
 c.addEventListener("click", function (event) {
-    if (object.length > 1) { /// If 
+    if (object.length > 1) { /// If
         for (let i = 0; i < object.length; i++) {
             if (collision(object[i].x, object[i].y, event.layerX, event.layerY) < object[i].r * 2) {
                 return 0;
@@ -140,10 +149,9 @@ c.addEventListener("click", function (event) {
     } else {
         object.push(new Draw(event.layerX, event.layerY));
     }
+});
 
-})
-
-// update list 
+// update list
 
 function update() {
     ctx.fillStyle = "#eeeeee";
@@ -155,19 +163,14 @@ function update() {
     for (let i = 0; i < object.length; i++) {
         object[i].move();
     }
-
-}
-
+};
 
 setInterval(update, 1);
 
-
-
 restart.addEventListener('click', restartGame);
-
 
 function restartGame() {
     num_object = 0;
     object = [];
-}
+};
 
