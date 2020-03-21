@@ -1,0 +1,59 @@
+.nav-header {
+    height: 45px;
+}
+
+.first-nav {
+    margin-left: 125px;
+}
+
+.home-items-li {
+    margin-right: 25px;
+}
+
+.home-items-li a {
+    color: #66757f;
+}
+
+.home-items-li a:hover {
+    transition: 0.5s;
+    color: rgb(120, 120, 221);
+    text-decoration: none;
+}
+
+.icon-margin {
+    margin-right: 5px;
+}
+
+.compose-items {
+    border: 0;
+    border-radius: 3px;
+    background-color: #71bad5;
+    height: 34px;
+    width: 40px;
+}
+
+.last-nav {
+    margin-right: 140px;
+}
+
+.search-form {
+    border-radius: 20px;
+    background-color: #a3acb2;
+    color: #cfd4d7;
+    height: 35px;
+    transition: 0.5s;
+}
+
+.search-form:hover {
+    transition: 0.5s;
+}
+
+nav {
+    height: 45px;
+}
+
+.head-blue {
+    width: 100%;
+    height: 344px;
+    background-color: #0084b4;
+}
