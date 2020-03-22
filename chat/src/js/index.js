@@ -1,12 +1,12 @@
 "use strict";
 
-let input = document.getElementById('input');
-let display = document.getElementById('display');
-let person = document.getElementById('person');
+const input = document.getElementById('input');
+const display = document.getElementById('display');
+const person = document.getElementById('person');
 let color = '';
 let userName = '';
 
-let socket = new WebSocket('wss://zi-node-chat.herokuapp.com');
+const socket = new WebSocket('wss://zi-node-chat.herokuapp.com');
 
 function newMessage(dat, message, author, color) {
     display.innerHTML += '<p class="row"><span style="color:' + color + ' ">' + author + '</span> @ '
