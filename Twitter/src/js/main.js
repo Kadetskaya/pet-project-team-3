@@ -9,6 +9,7 @@ head_click.forEach(element => {
             }
 
         })
-        e.target.classList.add("nav-content_active");
+        e.currentTarget.classList.add("nav-content_active");
+
     })
 })
