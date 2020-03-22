@@ -3,7 +3,7 @@
 }
 
 .first-nav {
-    margin-left: 125px;
+    margin-left: 3%;
 }
 
 .home-items-li {
@@ -28,24 +28,43 @@
     border: 0;
     border-radius: 3px;
     background-color: #71bad5;
-    height: 34px;
+    height: 24px;
     width: 40px;
 }
 
 .last-nav {
-    margin-right: 140px;
+    margin-right: 3%;
+}
+
+.search-form__input {
+    border-radius: 20px;
+    border: 1px solid #a3acb2;
+    background-color: #a3acb2;
+    color: #cfd4d7;
+    height: 24px;
+    padding-left: 5px;
+    padding-right: 30px;
+    transition: 0.5s;
+}
+
+.search_icon {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1122px;
+    top: 17px;
+    width: 12px;
+    height: 12px;
+    z-index: 164;
 }
 
 .search-form {
-    border-radius: 20px;
-    background-color: #a3acb2;
-    color: #cfd4d7;
-    height: 35px;
-    transition: 0.5s;
+    margin-right: 3%;
 }
 
-.search-form:hover {
+.search-form__input:hover:active {
+    background-color: white;
     transition: 0.5s;
+    border: 1px solid #a3acb2;
 }
 
 nav {
