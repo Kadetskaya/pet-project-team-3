@@ -1,0 +1,104 @@
+body {
+    background-color: #e5edf0;
+}
+
+.navbar {
+    display: flex;
+}
+
+.first-nav {
+    margin-left: 15%;
+}
+
+.home-items-li {
+    margin-right: 25px;
+}
+
+.home-items-li a {
+    color: #66757f;
+}
+
+.home-items-li a:hover {
+    transition: 0.5s;
+    color: rgb(120, 120, 221);
+    text-decoration: none;
+}
+
+.icon-margin {
+    margin-right: 5px;
+}
+
+nav {
+    height: 45px;
+}
+
+.container {
+    width: 40%;
+    border: 2px solid #DEE2E6;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15%;
+    padding: 0;
+    font-family: HelveticaNeue;
+    display: block;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.form__title {
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.form-group {
+    padding-top: 15px;
+}
+
+.names {
+    display: inline-block;
+    width: 49%;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 2px solid #DEE2E6;
+    padding: 0;
+}
+
+.btn {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #4ca2f5;
+}
+
+.btn-primary {
+    font-size: 0.8rem;
+    padding: 1.5px;
+}
+
+.reference {
+    height: 65px;
+    background-color: #f5f9fa;
+}
+
+.reference__text {
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 0) and (max-width: 1100px) {
+    .names {
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
