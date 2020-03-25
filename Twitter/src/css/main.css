@@ -431,10 +431,14 @@ ul {
     height: 15px;
 }
 
-.follow {
+.nav-content-right__following {
     color: white;
     background-color: #53a9ea;
+    border: 1px solid #3b88c3;
     border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    font-size: 12px;
 }
 
 .saidbar {
@@ -442,7 +446,11 @@ ul {
     padding: 0 auto;
 }
 
-.settingsIcon {
+.nav-content__settings-icon {
     width: 30px;
     height: 15px;
+}
+
+.nav-content__settings {
+    cursor: pointer;
 }
