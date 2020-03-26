@@ -3,251 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.ico" type="image/x-icon">
-    <title>Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Twiter</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="first-nav collapse navbar-collapse mr-auto">
+            <ul class="first-nav__home-items home-items navbar-nav">
+                <li class="nuw-item home-items-li">
+                    <a href="#"><img src="../img/homeIcon.png" width="22" height="19" class="d-inline-block align-text-top icon-margin ">Home</a>
+                </li>
+                <li class="nuw-item home-items-li">
+                    <a href="#"> <img src="../img/connectIcon.png" width="21" height="21" alt="" class="d-inline-block align-text-top icon-margin"> Connect</a>
+                </li>
+                <li class="nuw-item home-items-li">
+                    <a href="#"><img src="../img/discoverIcon.png" width="19" height="19" alt="" class="d-inline-block align-text-top icon-margin"> Discover</a>
+                </li>
+                <li class="nuw-item home-items-li">
+                    <a href="#"><img src="../img/meIcon.png" alt="" class="d-inline-block align-text-top icon-margin"> Me</a>
+                </li>
+            </ul>
 
-    <header class="navbar sticky-top header">
-        <div class="container">
-            <div class="row">
-                <div class="col col-lg-4">
-                    <nav class="navigation-block d-flex justify-content-between">
-                        <a class="navigation-item" href="">
-                            <img alt="Home icon" class="navigation-item__img home" src="../img/home_icon.svg"><span class="navigation-item__text">Home</span>
+        </div>
+        <div class="center-nav collapse navbar-collapse mr-auto">
+            <img src="../img/twitterLogo.png" class="d-inline-block align-text-top" alt=""></div>
+        <form class="form-inline search-form my-3 my-lg-0 ">
+            <input class="search-form__input" type="search" placeholder="Search"></form>
+        <div class="last-nav">
+            <ul class="navbar-nav">
+                <li class="nuw-item home-items-li">
+                    <a href="#"><img src="../img/DMIcon.png" class="d-inline-block align-bottom" alt=""></a>
+                </li>
+                <li class="nuw-item home-items-li">
+                    <a href="#"><img src="../img/settingsIcon.png" class="d-inline-block align-bottom" alt=""></a>
+                </li>
+                <li class="nuw-item home-items-li"><a href="#"><button class="compose-items align-text-top"><img src="../img/composeIcon.png" width= "18px"class="d-inline-block align-text-top" alt=""></button></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="head-blue"></section>
 
-                        </a>
-                        <a class="navigation-item" href="#">
-                            <img alt="email icon" class="navigation-item__img email" src="../img/connect_icon.svg"><span class="navigation-item__text">Connect</span>
-                        </a>
-                        <a class="navigation-item" href="#">
-                            <img alt="discover icon" class="navigation-item__img discover" src="../img/discover_icon.svg"><span class="navigation-item__text">Discover</span>
-                        </a>
-                        <a class="navigation-item" href="#">
-                            <img alt="Me icon" class="navigation-item__img me" src="../img/me_icon.svg   "><span class="navigation-item__text">Me</span>
-                        </a>
-                    </nav>
-                </div>
 
-                <div class="col col-lg-1 offset-lg-2">
-                    <img alt="twitter logo" src="../img/twitter_logo.svg">
-                </div>
+    <section class="content row">
+        <div class="saidbar container-lg"></div>
+        <div class="inner-content saidbar container-lg">
+            <div class="inner-nav row">
+                <p class="col-sm active">TWEETS <br><span class="align-text-center"> 781 </span></p>
+                <p class="col-sm ">PHOTOS/VIDEOS<br>62</p>
+                <p class="col-sm ">FOLLOWERS <br><span class="align-text-center"> 277 </span></p>
+                <p class="col-sm ">FAVORITES <br><span class="align-text-center"> 24 </span></p>
+                <p class="col-sm ">VIEW <br><span class="align-text-center"> Lists</span></p>
 
-                <div class="col col-lg-4 offset-lg-1 icons-block">
-                    <div class="search-block">
-                        <input class="search__input" placeholder="Search" type="text">
-                        <img alt="Search Icon" class="search__img" src="../img/search_icon.svg">
-                    </div>
 
-                    <img alt="Message icon" class="icon" src="../img/dm_icon.svg">
-                    <img alt="Setting icon" class="icon" src="../img/settings_icon.svg">
-                    <div class="compose-block">
-                        <img alt="Compose icon" class="icon" src="../img/compose_icon.svg">
-                    </div>
-                </div>
+
             </div>
         </div>
-    </header>
+    </section>
 
-    <div class="profile-background">
-        <div class="row">
-            <div class="container-fluid">
-
-            </div>
-            <div class="new-post post-image"></div>
-            <div class="post"></div>
-            <div class="post retweet"></div>
-        </div>
-    </div>
-
-    <div class="main">
-        <div class="container">
-            <div class="row content-table">
-                <div class="col-lg-4 left-section">
-                    <div class="left-section__profile">
-                        <div class="profile-img">
-
-                        </div>
-
-                        <h2 class="profile__name">
-                            Your Name here
-                        </h2>
-
-                        <p class="profile__handle">
-                            @YourHandleHere
-                        </p>
-
-                        <p class="profile__text">
-                            Your bio goes here in max 140 characters. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        </p>
-
-                        <div class="profile-location">
-                            <img src="../img/Location%20icon.svg" alt="location icon" class="profile-location__icon">
-                            <span class="profile-location__text">Your location</span>
-                        </div>
-                        <div class="profile-web">
-                            <img src="../img/URL%20icon.svg" alt="location icon" class="profile-web__icon">
-                            <span class="profile-web__text">yourwebsite.url</span>
-                        </div>
-
-                        <div class="tweet">
-                            <input placeholder="Tweet to Your Name here" class="tweet__inner">
-                        </div>
-
-                        <div class="follow">
-                            <div class="follow-menu">
-                                <h2 class="follow__title">Who to follow</h2>
-                                <div class="follow-menu-item"><span class="dot">·</span>Refresh</div>
-                                <div class="follow-menu-item"><span class="dot">·</span>View all</div>
-                            </div>
-
-                            <div class="follow-item">
-                                <img src="../img/giuliobx_profile_pic.png" alt="" class="follow-item-img">
-                                <div class="follow-item__information">
-                                    <p class="follow-name">Giulio Bordonaro <span class="follow-name__link">@GiulioBx</span></p>
-                                    <button class="follow-button">
-                                    <img src="../img/follow_icon.svg" alt="follow_icon"><span>Follow</span>
-                                </button>
-                                </div>
-                            </div>
-
-                            <div class="follow-item">
-                                <img src="../img/user2_profile_pic.png" alt="" class="follow-item-img">
-                                <div class="follow-item__information">
-                                    <p class="follow-name">Interesting User<span class="follow-name__link">@User</span></p>
-                                    <button class="follow-button">
-                                    <img src="../img/follow_icon.svg" alt="follow_icon"><span>Follow</span>
-                                </button>
-                                </div>
-                            </div>
-
-                            <div class="follow-item">
-                                <img src="../img/user3_profile_pic.png" alt="" class="follow-item-img">
-                                <div class="follow-item__information">
-                                    <p class="follow-name">Other User <span class="follow-name__link">@OtherUser</span></p>
-                                    <button class="follow-button">
-                                    <img src="../img/follow_icon.svg" alt="follow_icon"><span>Follow</span>
-                                </button>
-                                </div>
-                            </div>
-
-                            <ul class="other-link">
-                                <li class="link">Popular accounts</li>
-                                <li class="link">Find friends</li>
-                            </ul>
-
-                        </div>
-
-                        <div class="trends">
-                            <h2 class="trends__title">Worldwide Trends</h2><span class="dot">·</span><span class="trends__change">Change</span>
-
-                            <ul class="trends-list">
-                                <li class="trends-list__item"><span class="hashtag"> #NewTwitter</span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #GBX </span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #graphicdesign </span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #mockup </span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #layout</span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #PSD</span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #FreeTemplate</span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #Lorem</span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #ipsum</span></li>
-                                <li class="trends-list__item"><span class="hashtag"> #amet</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="rights">
-                            © 2014 Twitter About Help Ads info Twitter 2014 GUI PSD by @GiulioBx - v.1.1
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-8 right-section">
-                    <div class="right-section__tape tape">
-                        <div class="inner-content saidbar container-lg pt-2">
-                            <div class="inner-nav-content row">
-                                <div class="nav-content-left col-lg-9 ">
-                                    <div class="inner-nav-content-left-head  row">
-                                        <p class="col-sm inner-head nav-content_active ">TWEETS <br><span class="align-text-center inner-head__value"> 781 </span></p>
-                                        <p class="col-sm inner-head">PHOTOS/VIDEOS<br> <span class="align-text-center inner-head__value">62</span> </p>
-                                        <p class="col-sm inner-head ">FOLLOWERS <br><span class="align-text-center inner-head__value"> 277 </span></p>
-                                        <p class="col-sm inner-head">FAVORITES <br><span class="align-text-center inner-head__value"> 24 </span></p>
-                                        <p class="col-sm inner-head ">VIEW <br><span class="align-text-center inner-head__value"> Lists</span></p>
-                                    </div>
-                                    <div class="inner-nav-content-left-footer row">
-                                        <p class="footer-tweet-nav ml-3 footer-tweet-nav_active">Tweets</p>
-                                        <p class="footer-tweet-nav ml-5">Tweets and replies</p>
-                                    </div>
-                                </div>
-                                <div class="nav-content-right col-lg-3 row ">
-                                    <input class="nav-content-right__following mt-2 " type="button" value="Following">
-                                    <div class="nav-content__settings row mt-4 ml-2">
-                                        <img src="../img/settings_icon.svg" class="nav-content__settings-icon " alt="">
-                                        <div class="chevron"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="tape__post bg-white mt-2">
-                            <p class="tape__time ml-3 pt-2">38m ago</p>
-                            <h1 class="tape__new-post ml-3 mr-3">Twitter changes its layout, again. This one is a huge tweet. <span class="hashtag">#NewTwitter</span></h1>
-                            <div class="tape__footer ml-3 mt-3 mb-3 row">
-                                <div class="tape__icon  ml-2"><img src="../img/tape/replyIcon.png" class="mr-1 d-inline-block " alt="">150</div>
-                                <div class="tape__icon  ml-2"><img src="../img/tape/favIcon.png" class="mr-1 d-inline-block " alt="">35</div>
-                                <div class="tape__icon ml-2"><img src="../img/tape/rtIcon.png" class="mr-1 d-inline-block " alt="">50</div>
-                                <div class="tape__icon ml-5"><img src="../img/tape/tweeBox.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="tape__post bg-white mt-2">
-                            <p class="tape__time ml-3 pt-3">1h ago</p>
-                            <h1 class="tape__new-post ml-3 mr-3">This is a tweet with a nice <span class="hashtag">#picture</span> attached. Feel free to insert your favorite image here.</h1>
-                            <div class="tape__image"></div>
-                            <div class="tape__footer ml-3 mt-3 mb-3 row">
-                                <div class="row col-lg-7">
-                                    <div class="tape__icon ml-2"><img src="../img/tape/replyIcon.png" class="mr-1 d-inline-block " alt="">310</div>
-                                    <div class="tape__icon ml-2"><img src="../img/tape/favIcon.png" class="mr-1 d-inline-block " alt="">23</div>
-                                    <div class="tape__icon ml-2"><img src="../img/tape/rtIcon.png" class="mr-1 d-inline-block " alt="">89</div>
-                                    <div class="tape__icon ml-5"><img src="../img/tape/tweeBox.png" alt=""></div>
-                                </div>
-                                <div class="tape__icon col-lg-4 offset-lg-1"><span class=" tape__more-p ">View more photos</span> </div>
-                            </div>
-                        </div>
-                        <div class="tape__post bg-white mt-2 ">
-                            <p class="tape__time ml-3 pt-3">2d ago</p>
-                            <h1 class="tape__last-post ml-3 mr-3">And now comes a regular tweet! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. <span class="hashtag">#placeholdertext</span></h1>
-                            <div class="tape__footer ml-3 mt-3 mb-3 row">
-                                <div class="tape__icon ml-2"><img src="../img/tape/replyIcon.png" class="mr-1 d-inline-block " alt="">310</div>
-                                <div class="tape__icon ml-2"><img src="../img/tape/favIcon.png" class="mr-1 d-inline-block" alt="">23</div>
-                                <div class="tape__icon ml-2"><img src="../img/tape/rtIcon.png" class="mr-1 d-inline-block " alt="">89</div>
-                                <div class="tape__icon ml-5"><img src="../img/tape/tweeBox.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="tape__post bg-white mt-2 ">
-                            <p class="tape__time tape__time_uppercase ml-3 pt-3"><img src="../img/tape/tweetBox.png" class="mr-1 d-inline-block" alt=""> retweeted on feb 13</p>
-                            <div class="tape__retweed retweed row ml-3 mb-3">
-                                <div class="retweed__author-name"><img src="../img/tape/giulioBXProfilePic.png" class="d-inline-block align-text-bottom retweed__img mr-1" alt="">Giulio Bordonaro <span class="retweed__author-psevdo">@GiulioBX·</span><span class="retweed__author-time">Feb 13</span></div>
-                            </div>
-                            <h3 class="tape__last-post ml-3 mr-3 ">I hope you find this <span class="hashtag"> #PSD</span><span class="hashtag"> #template</span> useful. You can find the latest version on http://j.mp/twitter2014gui (if you have any suggestion please contact me)</h3>
-                            <div class="tape__footer ml-3 mt-3 mb-3 row">
-                                <div class="tape__icon ml-2"><img src="../img/tape/replyIcon.png" class="mr-1 d-inline-block " alt="">310</div>
-                                <div class="tape__icon ml-2"><img src="../img/tape/favIcon.png" class="mr-1 d-inline-block " alt="">23</div>
-                                <div class="tape__icon ml-2"><img src="../img/tape/rtIcon.png" class="mr-1 d-inline-block " alt="">89</div>
-                                <div class="tape__icon ml-5"><img src="../img/tape/tweeBox.png" alt=""></div>
-                            </div>
-                        </div>
-                        <footer class="tape-footer">
-                            <div class="tape-footer__logo"><img src="../img/tape/twitterLogo.png" alt=""></div>
-                        </footer>
-                    </div>
-                </div>
-                <script src="../js/main.js "></script>
-                <script crossorigin="anonymous " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " src="https://code.jquery.com/jquery-3.4.1.slim.min.js "></script>
-                <script crossorigin="anonymous " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "></script>
-                <script crossorigin="anonymous " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
