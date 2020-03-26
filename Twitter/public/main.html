@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./vendor/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="//abs.twimg.com/favicons/twitter.ico" rel="shortcut icon" type="image/x-icon">
+    <title>Twitter</title>
+</head>
+
+<body>
+
+<header class="navbar sticky-top header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-5 col-xl-4 col-sm-2">
+                <nav class="navbar navbar-expand-sm   navbar-light justify-content-between">
+                    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler" data-target="#navbarSupportedContent"
+                            data-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navigation-list" id="navbarSupportedContent">
+                        <a class="navigation-item" href="#">
+                            <img alt="Home icon" class="navigation-item__img home" src="img/home_icon.svg"><span
+                                class="navigation-item__text">Home</span>
+                        </a>
+                        <a class="navigation-item" href="#">
+                            <img alt="email icon" class="navigation-item__img email" src="img/connect_icon.svg"><span
+                                class="navigation-item__text">Connect</span>
+                        </a>
+                        <a class="navigation-item" href="#">
+                            <img alt="discover icon" class="navigation-item__img discover"
+                                 src="img/discover_icon.svg"><span class="navigation-item__text">Discover</span>
+                        </a>
+                        <a class="navigation-item" href="#">
+                            <img alt="Me icon" class="navigation-item__img me" src="img/me_icon.svg   "><span
+                                class="navigation-item__text">Me</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class=" col-lg-1 d-none d-lg-block offset-lg-1 ">
+                <img alt="twitter logo" class="twitter__logo" src="img/twitter_logo.svg">
+            </div>
+
+            <div class="col-12 col-md-7 offset-md-3 col-xl-4  col-lg-5 offset-xl-1  offset-lg-0 icons-block  d-flex align-items-center">
+                <div class="search-block">
+                    <input class="search__input" placeholder="Search" type="text">
+                    <img alt="Search Icon" class="search__img" src="img/search_icon.svg">
+                </div>
+
+                <img alt="Message icon" class="icon" src="img/dm_icon.svg">
+                <img alt="Setting icon" class="icon" src="img/settings_icon.svg">
+                <div class="compose-block">
+                    <img alt="Compose icon" class="icon" src="img/compose_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="profile-background">
+    <div class="row">
+        <div class="container-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-8">
+                <div class="left-section__profile">
+                    <div class="profile-img">
+                    </div>
+
+                    <h2 class="profile__name">
+                        Your Name here
+                    </h2>
+
+                    <p class="profile__handle">
+                        @YourHandleHere
+                    </p>
+
+                    <p class="profile__text">
+                        Your bio goes here in max 140 <br>
+                        characters. Lorem ipsum dolor sit <br>
+                        amet, consectetur adipisicing elit, sed do <br>
+                        eiusmod tempor incididunt ut lab <br>
+                    </p>
+
+                    <div class="profile-location">
+                        <img alt="location icon" class="profile-location__icon" src="img/Location%20icon.svg">
+                        <span class="profile-location__text">Your location</span>
+                    </div>
+                    <div class="profile-web">
+                        <img alt="location icon" class="profile-web__icon" src="img/URL%20icon.svg">
+                        <span class="profile-web__text">yourwebsite.url</span>
+                    </div>
+
+                    <div class="tweet">
+                        <input class="tweet__inner" placeholder="Tweet to Your Name here">
+                    </div>
+
+                    <div class="follow">
+                        <div class="follow-menu">
+                            <h2 class="follow__title">Who to follow</h2>
+                            <div class="follow-menu-item"><span class="dot">·</span>Refresh</div>
+                            <div class="follow-menu-item"><span class="dot">·</span>View all</div>
+                        </div>
+
+                        <div class="follow-item">
+                            <img alt="" class="follow-item-img" src="img/giuliobx_profile_pic.png">
+                            <div class="follow-item__information">
+                                <p class="follow-name">Giulio Bordonaro <span class="follow-name__link">@GiulioBx</span>
+                                </p>
+                                <button class="follow-button">
+                                    <img alt="follow_icon" src="img/follow_icon.svg"><span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="follow-item">
+                            <img alt="" class="follow-item-img" src="img/user2_profile_pic.png">
+                            <div class="follow-item__information">
+                                <p class="follow-name">Interesting User<span class="follow-name__link">@User</span></p>
+                                <button class="follow-button">
+                                    <img alt="follow_icon" src="img/follow_icon.svg"><span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="follow-item">
+                            <img alt="" class="follow-item-img" src="img/user3_profile_pic.png">
+                            <div class="follow-item__information">
+                                <p class="follow-name">Other User <span class="follow-name__link">@OtherUser</span></p>
+                                <button class="follow-button">
+                                    <img alt="follow_icon" src="img/follow_icon.svg"><span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <ul class="other-link">
+                            <li class="link">Popular accounts</li>
+                            <li class="link">Find friends</li>
+                        </ul>
+                    </div>
+
+                    <div class="trends">
+                        <h2 class="trends__title">Worldwide Trends</h2>
+                        <span class="dot">·</span>
+                        <span class="trends__change">Change</span>
+
+                        <ul class="trends-list">
+                            <li class="trends-list__item"><span class="hashtag"> #NewTwitter</span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #GBX </span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #graphicdesign </span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #mockup </span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #layout</span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #PSD</span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #FreeTemplate</span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #Lorem</span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #ipsum</span></li>
+                            <li class="trends-list__item"><span class="hashtag"> #amet</span></li>
+                        </ul>
+                    </div>
+                    <div class="rights">
+                        © 2014 Twitter About Help Ads info Twitter 2014 GUI PSD by @GiulioBx - v.1.1
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-8">
+                <div class="tweets">
+                    <div class="tweets-menu">
+
+                        <div class="tweet-menu__item inner-head active">
+                            <div class="tweet-text">
+                                TWEETS
+                            </div>
+                            <div class="tweet-number">
+                                781
+                            </div>
+                        </div>
+
+                        <div class="tweet-menu__item inner-head">
+                            <div class="tweet-text">
+                                PHOTOS/VIDEOS
+                            </div>
+                            <div class="tweet-number">
+                                62
+                            </div>
+                        </div>
+
+                        <div class="tweet-menu__item inner-head">
+                            <div class="tweet-text">
+                                FOLLOWING
+                            </div>
+                            <div class="tweet-number">
+                                164
+                            </div>
+                        </div>
+
+                        <div class="tweet-menu__item inner-head">
+                            <div class="tweet-text">
+                                FOLLOWERS
+                            </div>
+                            <div class="tweet-number">
+                                277
+                            </div>
+                        </div>
+
+                        <div class="tweet-menu__item inner-head">
+                            <div class="tweet-text">
+                                FAVORITES
+                            </div>
+                            <div class="tweet-number">
+                                24
+                            </div>
+                        </div>
+
+                        <div class="tweet-menu__item inner-head">
+                            <div class="tweet-text">
+                                VIEW
+                            </div>
+                            <div class="tweet-number">
+                                Lists
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-setting">
+                        <button class="tweet-setting__button">
+                            Following
+                        </button>
+                        <img alt="" class="setting__icon" src="img/tape/settingsIcon.png">
+                    </div>
+                </div>
+
+                <div class="hr">
+
+                </div>
+
+                <div class="tweet-tabs">
+                    <span class="tweet-tabs-item tabs-active">Tweets</span>
+                    <span class="tweet-tabs-item">Tweets and replies</span>
+                </div>
+
+                <div class="hr">
+
+                </div>
+
+                <div class="card mb-2 mt-4">
+                    <div class="card-body py-3 px-0 ">
+
+                        <h6 class="card-subtitle mt-1 mb-4 px-3 text-muted font-size-12">36m ago</h6>
+                        <p class="card-text mb-3 px-3 font-weight-normal  card-title">Twitter changes its layout,again.
+                            This one is a huge tweet.<a href="#" class="card-link"> #NewTwitter</a></p>
+
+                        <div class="mt-2 px-3">
+                            <div class="tweet-footer">
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/replyIcon.png">
+                                    <span class=" font-weight-bold font-size-12">150</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/rtIcon.png">
+                                    <span class=" font-weight-bold font-size-12">35</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/fav_icon_130.png">
+                                    <span class=" font-weight-bold font-size-12">50</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/tweeBox.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-2 ">
+                    <div class="card-body py-3 px-0">
+
+                        <h6 class="card-subtitle mt-1 mb-4 px-3 text-muted font-size-12">1h ago</h6>
+                        <p class="card-text mb-3 px-3 font-weight-normal card-title">This is a tweet with a nice<a
+                                href="#" class="card-link"> #picture </a>attached. Feel free to insert your favorite
+                            image here.</p>
+                        <img src="img/tape/photo_area_150.png" class="card-img-top m-0 w-100 rounded-0" alt="">
+
+                        <div class="mt-2 px-3 ">
+                            <div class="tweet-footer">
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/replyIcon.png">
+                                    <span class=" font-weight-bold font-size-12">310</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/rtIcon.png">
+                                    <span class=" font-weight-bold font-size-12">23</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/fav_icon_130.png">
+                                    <span class=" font-weight-bold font-size-12">89</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/tweeBox.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-2 ">
+                    <div class="card-body py-3 px-0 ">
+
+                        <h6 class="card-subtitle mt-1 mb-4 px-3 text-muted font-size-12">2d ago</h6>
+                        <p class="card-text mb-3 px-3 font-weight-normal font-size-16">And now comes a regular tweet!
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim.<a href="#" class="card-link"> #placeholdertext</a></p>
+
+                        <div class="mt-2 px-3">
+                            <div class="tweet-footer">
+                                <div class="mr-2 ">
+                                    <img src="img/tape/replyIcon.png">
+                                    <span class=" font-weight-bold font-size-12">150</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/rtIcon.png">
+                                    <span class=" font-weight-bold font-size-12">35</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/fav_icon_130.png">
+                                    <span class=" font-weight-bold font-size-12">50</span>
+                                </div>
+
+                                <div class="mr-2 ">
+                                    <img src="img/tape/tweeBox.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-2 ">
+                    <div class="card-body py-3 px-0">
+                        <h6 class="card-subtitle mt-1 mb-4 px-3 text-muted font-size-14 text-uppercase"><img
+                                src="img/tape/tweetBox.png" class="pr-1">retweeted on feb 13</h6>
+
+                        <div class="d-flex-row mt-n3 mb-4 px-3">
+                            <img src="img/tape/giulioBXProfilePic.png">
+                            <a href="#" class="card-link font-size-14">Giulio Bordonaro </a>
+                            <span class="font-size-14 text-muted">@GiulioBX · Feb 13</span>
+                        </div>
+
+                        <p class="card-text mb-3 px-3 font-weight-normal font-size-16">I hope you find this <a href="#"
+                                                                                                               class="card-link">#PSD
+                            #template</a> useful. You can find the latest version on <a href="#" class="card-link">http://j.mp/twitter2014gui</a>
+                            (if you have any suggestion please contact me)</p>
+
+                        <div class="mt-2 px-3 ">
+                            <div class="tweet-footer">
+                                <div class="mr-2 ">
+                                    <img src="img/tape/replyIcon.png">
+                                    <span class=" font-weight-bold font-size-12">150</span>
+                                </div>
+                                <div class="mr-2 ">
+                                    <img src="img/tape/rtIcon.png">
+                                    <span class=" font-weight-bold font-size-12">35</span>
+                                </div>
+                                <div class="mr-2 ">
+                                    <img src="img/tape/fav_icon_130.png">
+                                    <span class="fav-number font-weight-bold font-size-12">50</span>
+                                </div>
+                                <div class="mr-2">
+                                    <img src="img/tape/tweeBox.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer class="footer pt-2">
+                    <img src="img/tape/twitterLogo.png" alt="" class="footer-img">
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script crossorigin="anonymous "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js "></script>
+<script crossorigin="anonymous "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "></script>
+<script crossorigin="anonymous "
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+        src="./vendor/js/bootstrap.min.js "></script>
+<script src="./js/index.js "></script>
+</body>
+
+</html>
