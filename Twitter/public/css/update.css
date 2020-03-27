@@ -1,0 +1,225 @@
+body {
+    background-color: #e5edf0;
+    font-family: Helvetica;
+}
+
+.header {
+    background-color: #f5f8fa;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.head {
+    flex-wrap: nowrap;
+}
+
+.navigation {
+    max-width: 600px;
+    width: 100%;
+}
+
+.navigation-item {
+    text-decoration: none;
+    color: #66757f;
+    transition: 0.5s all ease-out;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+
+.navigation-item:hover {
+    text-decoration: none;
+    color: #1d2129;
+}
+
+.navigation-item__img {
+    margin-right: 5px;
+}
+
+
+.twitter__logo {
+    padding-top: 10px;
+}
+
+
+.search__input {
+    border: none;
+    text-indent: 10px;
+    height: 100%;
+    width: 85%;
+    background-color: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    outline: none;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #dadee0;
+}
+
+.search-block {
+    width: 210px;
+    height: 32px;
+    background-color: #a3acb2;
+    color: #dadee0;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search__img {
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+}
+
+.compose-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 40px;
+    height: 32px;
+    background-color: #71bad5;
+}
+
+.icons-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 0;
+    display: block;
+}
+
+.profile-block {
+    padding: 0;
+    margin: 15px;
+    margin-top: 0;
+    background-color: #ffffff;
+    min-height: 140px;
+    overflow: auto;
+}
+
+.background {
+    background-color: #4ca2f5;
+    height: 85px;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    background-color: #4ca2f5;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    position: relative;
+    top: 55px;
+    margin-left: 15px;
+    left: 0;
+}
+
+.username {
+    padding-left: 85px;
+}
+
+.name {
+    font-weight: bold;
+    color: #000000;
+}
+
+.username {
+    color: #667785;
+    width: 250px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #657786;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.center-align {
+    text-align: center;
+    background-color: #e5edf0;
+}
+
+.form__title {
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.form__second {
+    margin-top: 15px;
+}
+
+.form-group {
+    padding-top: 15px;
+}
+
+.names {
+    display: inline-block;
+    width: 49%;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 2px solid #DEE2E6;
+    padding: 0;
+}
+
+.btn {
+    width: auto;
+    height: 30px;
+    background-color: #4ca2f5;
+    border-radius: 0;
+}
+
+.btn-primary {
+    font-size: 0.8rem;
+}
+
+.twit {
+    border-radius: 15px;
+}
+
+.reference {
+    height: 65px;
+    background-color: #f5f9fa;
+}
+
+.reference__text {
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+@media (max-width: 990px) {
+.form {
+    padding: 25px;
+}
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//abs.twimg.com/favicons/twitter.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="update.css">
+    <title>Personal information</title>
+</head>
+
+<header class="navbar sticky-top header">
+    <div class="container">
+        <div class="row head">
+            <div class="col-lg-1 align-items-center">
+                <nav class="navbar">
+                    <a class="navigation-item" href="#">
+                        <img alt="Home icon" class="navigation-item__img home" src="img/home_icon.svg"><span
+                            class="navigation-item__text d-none d-sm-block">Home</span>
+                    </a>
+                </nav>
+            </div>
+
+            <div class=" col-lg-1 d-none d-md-block offset-lg-5 align-items-center">
+                <img alt="twitter logo" src="img/twitter_logo.svg" class="twitter__logo">
+            </div>
+
+            <div class="col-2 offset-1 d-flex align-items-center">
+                <div class="search-block">
+                    <input class="search__input" placeholder="Search" type="text">
+                    <img alt="Search Icon" class="search__img" src="img/search_icon.svg">
+                </div>
+            </div>
+            <div class="col-1 d-flex align-items-center">
+                <a href="#" class="btn btn-primary twit">Twitter</a>
+                <a href="../index.html" class="nav-link text-muted">Logout</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<div class="container main col-lg-10">
+    <div class="row">
+        <div class="profile-block col-lg-3">
+            <div class="background">
+                <div class="profile-img"></div>
+            </div>
+            <div class="username">
+                <a href="#" class="name">Name Lastname</a>
+                <span class="nickname">@nickname</span>
+            </div>
+        </div>
+
+        <div class="form col-lg-6">
+            <form class="form__first">
+                <div class="form__title">Personal Information</div>
+
+                <div class="form-group names">
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="form-group names">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username">
+                    <small class="form-text text-muted">Username must be at least three(3) characters long and must
+                        can contain one underscore and number.</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Bio">
+                </div>
+                <div class="form-group">
+                    <input type="text" onfocus="(this.type='date')" class="form-control"
+                           placeholder="Date of Birth">
+                </div>
+
+                <a href="#" class="btn btn-primary">UPDATE</a>
+            </form>
+
+
+            <form class="form__second">
+                <div class="form__title">Change Password</div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Current Password">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <small class="form-text text-muted">Password must be at least six(6) characters long and must
+                        can contain one uppercase and number.</small>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+
+                <a href="#" class="btn btn-primary">CHANGE PASSWORD</a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
