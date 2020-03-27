@@ -30,7 +30,6 @@ body {
     font-size: 14px;
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
     margin-left: 15px;
 }
 
@@ -42,12 +41,6 @@ body {
 .navigation-item__img {
     margin-right: 5px;
 }
-
-
-.twitter__logo {
-    padding-top: 10px;
-}
-
 
 .search__input {
     border: none;
@@ -67,7 +60,6 @@ body {
 }
 
 .search-block {
-    width: 210px;
     height: 32px;
     background-color: #a3acb2;
     color: #dadee0;
@@ -85,22 +77,6 @@ body {
     margin-right: 5px;
 }
 
-.compose-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    width: 40px;
-    height: 32px;
-    background-color: #71bad5;
-}
-
-.icons-block {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 .main {
     margin-top: 15px;
     margin-bottom: 30px;
@@ -113,8 +89,16 @@ body {
     margin: 15px;
     margin-top: 0;
     background-color: #ffffff;
+    height: 140px;
+}
+
+.profile-block-info {
+    padding: 0;
+    margin: 15px;
+    margin-top: 0;
+    background-color: #ffffff;
     min-height: 140px;
-    overflow: auto;
+    overflow: visible;
 }
 
 .background {
@@ -134,6 +118,13 @@ body {
     left: 0;
 }
 
+.card {
+    color: #667785;
+    width: 250px;
+    border: none;
+    background-color: unset;
+}
+
 .username {
     padding-left: 85px;
 }
@@ -143,18 +134,19 @@ body {
     color: #000000;
 }
 
-.username {
-    color: #667785;
-    width: 250px;
-}
-
 .info {
     display: flex;
     justify-content: space-around;
+    width: 250px;
 }
 
 a {
     color: #657786;
+}
+
+.amount {
+    color: #4ca2f5;
+    margin-left: 23px;
 }
 
 form {
@@ -219,7 +211,20 @@ form {
 }
 
 @media (max-width: 990px) {
-.form {
-    padding: 25px;
+    .form {
+        padding: 25px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
 }
+
+@media (min-width: 540px)
+and (max-width: 990px) {
+    .card {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
