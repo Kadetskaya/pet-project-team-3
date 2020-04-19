@@ -380,6 +380,36 @@ input, textarea{
     opacity: 0.8;
 }
 
+.video{
+    position: relative;
+}
+
+.video__background{
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    outline: none;
+}
+
+.play__button{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 45px;
+    margin-bottom: 100px;
+    height: 100px;
+    outline: none;
+    justify-content: center;
+    transition: all 0.6s;
+}
+
+.play__button:hover{
+    height: 200px;
+}
+
 .product__load-more{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -424,14 +454,6 @@ input, textarea{
     letter-spacing: 0.005em;
     color: #787878;
     text-align: center;
-}
-
-.video{
-    margin-top: 45px;
-    margin-bottom: 100px;
-    width: 100%;
-    height: auto;
-    outline: none;
 }
 
 .service-wrap{
@@ -677,6 +699,17 @@ input, textarea{
 
 .email{
     padding-bottom: 25px;
+}
+
+.toTop {
+    width:60px;
+    height:60px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:35px;
+    border: 5px solid white;
+    border-radius: 100%;
 }
 
 

@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/4272557b9c.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="topBtn.js"></script>
     <link href="main.css" rel="stylesheet">
     <title>Piroll</title>
 </head>
@@ -226,7 +228,10 @@
             Was years it seasons was there form he in in them together over that,<br>
             third sixth gathered female creeping bearing behold years.
         </div>
-        <video class="video" controls poster="img/video_background2.jpg" src="img/video.mp4"></video>
+        <div class="video">
+            <img alt="video" class="video__background" src="img/video.jpg">
+            <img alt="play" class="play__button" src="img/play-btn.png">
+        </div>
     </div>
 </section>
 
@@ -463,6 +468,7 @@
         </div>
     </div>
 </footer>
+<div id="toTop"><img alt="" class="toTop" src="img/icon_top.png"></div>
 
 <script src="index.js"></script>
 <script src="OwlCarousel2-2.3.4/dist/jquery.min.js"></script>
